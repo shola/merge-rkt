@@ -3,7 +3,8 @@
 (require racket/runtime-path)
 (require readline/readline)
 
-(define INPUT (file->list "/home/mikesi2/Dropbox/coursera/algorithms/hw1/IntegerArray.txt"))
+(define INPUT (file->list ;;"/home/mikesi2/Dropbox/coursera/algorithms/hw1/IntegerArray.txt"))
+;; ************ADD ABSOLUTE PATH HERE********           
 (check-expect (merge-sort INPUT) (sort INPUT <))
 
 ;; ListOfNumbers is one of:
